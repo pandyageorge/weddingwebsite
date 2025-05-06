@@ -5,8 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Invitation</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'EB Garamond', serif;
             text-align: center;
             background-color: #f9f9f9;
             margin: 0;
@@ -20,15 +22,25 @@
             font-weight: bold;
             margin: 20px 0;
         }
-        .link {
-            display: block;
-            margin: 10px 0;
-            font-size: 1.2em;
-            text-decoration: none;
-            color: #0073e6;
+        .bold-text {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 20px 0;
         }
-        .link:hover {
-            text-decoration: underline;
+        .button {
+            display: inline-block;
+            margin: 15px 0;
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #fff;
+            background-color: #0073e6;
+            border: none;
+            border-radius: 20px;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #005bb5;
         }
     </style>
 </head>
@@ -41,12 +53,16 @@
             You are hereby invited to Giselle and George's Wedding
         </div>
 
-        <a class="link" href="https://www.zola.com/addr/5BrwkY998">
-            Come celebrate!🎉<br>Share your address to receive an invitation.
+        <!-- "Come Celebrate" as bold text and address sharing as a button -->
+        <div class="bold-text">Come Celebrate!</div>
+        <a class="button" href="https://www.zola.com/addr/5BrwkY998">
+            Share your address to receive an invitation
         </a>
 
-        <a class="link" href="https://www.zola.com/wedding/giselleandgeorge">
-            Visit wedding website<br>For details, check out Giselle & George's wedding website.
+        <!-- "For details..." as bold text and wedding website as a button -->
+        <div class="bold-text">For details, check out Giselle & George's wedding website.</div>
+        <a class="button" href="https://www.zola.com/wedding/giselleandgeorge">
+            Visit Wedding Website
         </a>
     </div>
 </body>
